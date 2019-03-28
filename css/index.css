@@ -305,8 +305,18 @@ img {
   text-decoration: none;
   color: white;
   background: #17A2B8;
-  border: 1 px solid #C0C0C0;
   border-radius: 15px;
+  box-shadow: 2px 5px #999;
+  transition: 0.5s;
+}
+.home .content-pick .btn:hover {
+  background: #00b97c;
+}
+.home .content-pick .btn:active {
+  background: #00b97c;
+  transition: none;
+  box-shadow: 1px 3px #999;
+  transform: translateY(1px) translateX(2px);
 }
 @media (max-width: 800px) {
   .home .content-pick .btn {

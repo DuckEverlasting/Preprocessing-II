@@ -14,9 +14,21 @@
     font-size: 1.8rem;
     text-decoration: none;
     color: white;
-    background: @eastern-blue;
-    border: 1 px solid @navigation-border;
+    background: @button-bg;
     border-radius: 15px;
+    box-shadow: 2px 5px #999;
+    transition: 0.5s;
+
+    &:hover {
+        background: @button-hover;
+    }
+
+    &:active {
+        background: @button-hover;
+        transition: none;
+        box-shadow: 1px 3px #999;
+        transform: translateY(1px) translateX(2px);
+    }
 
     @media @tablet {
         max-width: 100%;
