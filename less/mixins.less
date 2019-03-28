@@ -7,4 +7,29 @@
     flex-flow: @flow;
 }
 
-.button-mx()
+.button-mx() {
+    .flex-mx();
+    max-width: 200px;
+    height: 44px;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: white;
+    background: @eastern-blue;
+    border: 1 px solid @navigation-border;
+    border-radius: 15px;
+
+    @media @tablet {
+        max-width: 100%;
+    }
+}
+
+.bg-change-mx(@color-1, @color-2, @duration) {
+    @keyframes bg-change {
+        from {background-color: @color-1;}
+        to {background-color: @color-2;}
+    }
+    animation-name: bg-change;
+    animation-duration: @duration;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
