@@ -1,1 +1,50 @@
 // Navigation Styles here
+
+.navigation {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    border-bottom: 2px dashed @navigation-border;
+    .bg-change-mx(@main-bg, @footer-bg, 4s);
+
+    .nav-bar {
+        max-width: 800px;
+        height: 45px;
+        margin: 0 auto;
+        .flex-mx(space-between);
+
+        nav {
+            margin-right: 15px;
+            flex-basis: 320px;
+            .flex-mx(space-around);
+            
+            a {
+                font-family: 'Roboto', sans-serif;
+                font-size: 1.6rem;
+                text-decoration: none;
+                color: Black;
+                
+                &:hover {
+                    text-decoration: underline;
+                }
+            }            
+        }
+    }
+
+    @media @mobile {
+        .nav-bar {
+
+            .flex-mx(center, center, row wrap);
+
+            h1 {
+                font-size: 3rem;
+                padding-bottom: 15px;
+            }
+
+            nav {
+                margin: 0;
+                flex-basis: 100%;
+            }
+        }
+    }
+}
